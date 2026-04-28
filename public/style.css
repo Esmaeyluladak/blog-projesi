@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box; /* padding ve border taşma yapmasın */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f0ff, #f8fbff);
+  min-height: 100vh;
+}
+
+/* Sayfanın ortasına kutuyu yerleştirir */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kayıt kartı */
+.auth-card {
+  width: 360px;
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Başlık */
+.auth-card h2 {
+  margin-bottom: 8px;
+  color: #2f4f7f;
+}
+
+/* Açıklama yazısı */
+.auth-card p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Inputlar */
+.auth-card input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Buton */
+.auth-card button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #4f7ecb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Buton üstüne gelince */
+.auth-card button:hover {
+  background: #3d6db8;
+}
+
+/* Alttaki giriş yap yazısı */
+.auth-card span {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.auth-card a {
+  color: #6085c1;
+  text-decoration: none;
+  font-weight: bold;
+}

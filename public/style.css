@@ -381,3 +381,67 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.experience-section {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.experience-section h2 {
+  color: #244a7c;
+  margin-bottom: 35px;
+  font-size: 32px;
+}
+
+.experience-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.experience-card {
+  background: #f8fbff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.experience-image {
+  height: 150px;
+  background: #eef3f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-image img {
+  height: 145px;      /* büyüttük */
+  width: auto;
+  object-fit: contain;
+}
+
+.experience-info {
+  padding: 28px;
+}
+
+.experience-info h3 {
+  color: #173f75;
+  margin-bottom: 14px;
+  font-size: 21px;
+}
+
+.experience-info p {
+  color: #4b5f7a;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

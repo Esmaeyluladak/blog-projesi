@@ -1,5 +1,6 @@
+/* ===== TAKIM ARKADASININ TASARIMI - DOKUNMA ===== */
 * {
-  box-sizing: border-box; /* padding ve border taşma yapmasın */
+  box-sizing: border-box;
 }
 
 body {
@@ -9,7 +10,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sayfanın ortasına kutuyu yerleştirir */
 .auth-container {
   min-height: 100vh;
   display: flex;
@@ -17,7 +17,6 @@ body {
   align-items: center;
 }
 
-/* Kayıt kartı */
 .auth-card {
   width: 360px;
   background: white;
@@ -27,20 +26,17 @@ body {
   text-align: center;
 }
 
-/* Başlık */
 .auth-card h2 {
   margin-bottom: 8px;
-  color: #2f4f7f;
+  color: #53729f;
 }
 
-/* Açıklama yazısı */
 .auth-card p {
   color: #6b7280;
   font-size: 14px;
   margin-bottom: 24px;
 }
 
-/* Inputlar */
 .auth-card input {
   width: 100%;
   padding: 13px;
@@ -50,7 +46,6 @@ body {
   font-size: 14px;
 }
 
-/* Buton */
 .auth-card button {
   width: 100%;
   padding: 13px;
@@ -62,12 +57,10 @@ body {
   cursor: pointer;
 }
 
-/* Buton üstüne gelince */
 .auth-card button:hover {
   background: #3d6db8;
 }
 
-/* Alttaki giriş yap yazısı */
 .auth-card span {
   display: block;
   margin-top: 18px;
@@ -79,4 +72,312 @@ body {
   color: #6085c1;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #2f4f7f;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a {
+  color: #e8f0ff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: white;
+}
+
+/* ===== ANASAYFA - HERO ===== */
+.hero {
+  text-align: center;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #4f7ecb, #2f4f7f);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ===== ANASAYFA - TAKIM KARTLARI ===== */
+.team-section {
+  padding: 64px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 28px;
+  color: #2f4f7f;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.team-card .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f7ecb, #2f4f7f);
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #2f4f7f;
+}
+
+.team-card .role {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.team-card .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4f7ecb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.team-card .btn:hover {
+  background: #3d6db8;
+}
+
+/* ===== PORTFOLYO - HEADER ===== */
+.portfolio-header {
+  text-align: center;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #4f7ecb, #2f4f7f);
+  color: white;
+}
+
+.portfolio-header .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #4f7ecb;
+  font-weight: bold;
+}
+
+.portfolio-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.portfolio-header .title {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ===== PORTFOLYO - HAKKIMDA ===== */
+.about-section {
+  padding: 64px 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2f4f7f;
+  border-left: 4px solid #4f7ecb;
+  padding-left: 16px;
+}
+
+.about-section p {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===== PORTFOLYO - PROJELER ===== */
+.projects-section {
+  padding: 64px 24px;
+  background: white;
+}
+
+.projects-section h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #2f4f7f;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #f8fbff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-card .project-image {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-card .project-info {
+  padding: 20px;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  color: #2f4f7f;
+  font-size: 17px;
+}
+
+.project-card p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ===== PORTFOLYO - ILETISIM ===== */
+.contact-section {
+  padding: 64px 24px;
+  text-align: center;
+  background: #2f4f7f;
+  color: white;
+}
+
+.contact-section h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: white;
+  color: #2f4f7f;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background: #e8f0ff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #1e3a5f;
+  color: #e8f0ff;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

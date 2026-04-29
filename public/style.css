@@ -1,4 +1,3 @@
-/* ===== TAKIM ARKADASININ TASARIMI - DOKUNMA ===== */
 * {
   box-sizing: border-box;
 }
@@ -51,14 +50,14 @@ body {
   padding: 13px;
   border: none;
   border-radius: 10px;
-  background: #4f7ecb;
+  background: #325c9f;
   color: white;
   font-size: 15px;
   cursor: pointer;
 }
 
 .auth-card button:hover {
-  background: #3d6db8;
+  background: #3b64a5;
 }
 
 .auth-card span {
@@ -74,9 +73,8 @@ body {
   font-weight: bold;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
-  background: #2f4f7f;
+  background: #08022d;
   padding: 16px 32px;
   display: flex;
   justify-content: space-between;
@@ -109,7 +107,6 @@ body {
   color: white;
 }
 
-/* ===== ANASAYFA - HERO ===== */
 .hero {
   text-align: center;
   padding: 64px 24px;
@@ -127,7 +124,6 @@ body {
   opacity: 0.9;
 }
 
-/* ===== ANASAYFA - TAKIM KARTLARI ===== */
 .team-section {
   padding: 64px 24px;
   max-width: 1100px;
@@ -138,7 +134,7 @@ body {
   text-align: center;
   margin-bottom: 48px;
   font-size: 28px;
-  color: #2f4f7f;
+  color: #3865a8;
 }
 
 .team-grid {
@@ -178,7 +174,7 @@ body {
 .team-card h3 {
   font-size: 20px;
   margin-bottom: 6px;
-  color: #2f4f7f;
+  color: #051a3a;
 }
 
 .team-card .role {
@@ -202,7 +198,6 @@ body {
   background: #3d6db8;
 }
 
-/* ===== PORTFOLYO - HEADER ===== */
 .portfolio-header {
   text-align: center;
   padding: 64px 24px;
@@ -223,7 +218,15 @@ body {
   color: #4f7ecb;
   font-weight: bold;
 }
-
+.portfolio-header .avatar-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 .portfolio-header h1 {
   font-size: 32px;
   margin-bottom: 8px;
@@ -234,7 +237,6 @@ body {
   opacity: 0.9;
 }
 
-/* ===== PORTFOLYO - HAKKIMDA ===== */
 .about-section {
   padding: 64px 24px;
   max-width: 700px;
@@ -255,16 +257,15 @@ body {
   line-height: 1.7;
 }
 
-/* ===== PORTFOLYO - PROJELER ===== */
 .projects-section {
   padding: 64px 24px;
-  background: white;
+  background: rgba(101, 146, 184, 0.653);
 }
 
 .projects-section h2 {
   font-size: 24px;
   margin-bottom: 40px;
-  color: #2f4f7f;
+  color: #5d80b4;
   text-align: center;
 }
 
@@ -289,7 +290,10 @@ body {
 }
 
 .project-card .project-image {
+  width: 100%;
   height: 160px;
+  object-fit: contain;
+  background: #e8f0ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,7 +318,77 @@ body {
   line-height: 1.5;
 }
 
-/* ===== PORTFOLYO - ILETISIM ===== */
+/* ===== SERTIFIKALAR ===== */
+.certificates-section {
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #e8f0ff, #f8fbff);
+}
+
+.certificates-section h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #2f4f7f;
+  text-align: center;
+}
+
+.certificates-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certificate-item {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-image {
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #e8f0ff;
+  flex-shrink: 0;
+}
+
+.certificate-info {
+  flex: 1;
+}
+
+.certificate-info h3 {
+  margin: 0 0 6px 0;
+  color: #2f4f7f;
+  font-size: 16px;
+}
+
+.certificate-info p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.certificate-info p:first-of-type {
+  color: #4f7ecb;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* ===== ILETISIM ===== */
 .contact-section {
   padding: 64px 24px;
   text-align: center;
@@ -380,6 +454,17 @@ body {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  .certificate-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certificate-image {
+    width: 100%;
+    height: 150px;
+  }
+}
+
 }
 
 .experience-section {
@@ -445,3 +530,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+

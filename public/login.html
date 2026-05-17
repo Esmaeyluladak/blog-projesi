@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş Yap</title>
+
+  <!-- Tasarım dosyamızı bağlıyoruz -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sayfadaki giriş kutusunu ortalamak için ana kapsayıcı -->
+  <div class="auth-container">
+
+    <!-- Giriş formunun bulunduğu kart -->
+    <div class="auth-card">
+      <h2>Giriş Yap</h2>
+      <p>Blog sayfalarını görüntülemek için hesabına giriş yap.</p>
+
+      <!-- Giriş formu -->
+      <form id="loginForm">
+
+        <!-- Kullanıcının e-posta girdiği alan -->
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="E-posta adresi"
+          required
+        >
+
+        <!-- Kullanıcının şifre girdiği alan -->
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Şifre"
+          required
+        >
+
+        <!-- Formu gönderen buton -->
+        <button type="submit">Giriş Yap</button>
+      </form>
+
+      <!-- Kayıt sayfasına yönlendirme -->
+      <span>
+        Hesabın yok mu? <a href="register.html">Kayıt Ol</a>
+      </span>
+    </div>
+
+  </div>
+
+  <!-- Login işlemini yapacak JS dosyası -->
+  <script src="script.js"></script>
+</body>
+</html>
